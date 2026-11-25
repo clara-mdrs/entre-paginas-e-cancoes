@@ -1,0 +1,454 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --marrom-cafe: #4A3026;
+    --marrom-madeira: #795548;
+    --caramelo: #A47551;
+    --bege-antigo: #D8C3A5;
+    --papel: #EFE4D2;
+    --verde-oliva: #626348;
+}
+
+body {
+    background-image: url("../imagens/decoracoes/fundo.jpeg");
+    color: var(--marrom-cafe);
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.cabecalho {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px 0;
+    margin: 0 auto;
+}
+
+.cabecalho h1 {
+    width: 100%;
+    margin: 0 auto 25px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--marrom-cafe);
+}
+
+/* ==============================
+   NAVEGAÇÃO
+============================== */
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px 30px;
+    width: 100%;
+    padding: 22px 20px;
+    margin-top: 20px;
+    background-color: var(--caramelo);
+    border-top: 2px solid var(--bege-antigo);
+    border-bottom: 2px solid var(--bege-antigo);
+}
+
+.navegacao a {
+    color: var(--papel);
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.navegacao a:hover {
+    color: var(--marrom-cafe);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* ==============================
+   CONTEÚDO E SEÇÕES
+============================== */
+
+.conteudo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.conteudo section {
+    padding: 50px 35px;
+    margin-bottom: 35px;
+    background-color: var(--papel);
+    border: 1px solid var(--bege-antigo);
+    border-radius: 8px;
+    scroll-margin-top: 25px;
+}
+
+.conteudo section h2 {
+    color: var(--marrom-cafe);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.conteudo section p {
+    color: var(--marrom-madeira);
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ==============================
+   APRESENTAÇÃO
+============================== */
+
+.apresentacao {
+    text-align: center;
+    padding: 100px 35px !important;
+    background-color: var(--papel) !important;
+    border: 2px solid var(--bege-antigo) !important;
+    box-shadow: 0 8px 20px rgba(74, 48, 38, 0.12);
+}
+
+.apresentacao h2 {
+    font-size: 42px !important;
+    color: var(--marrom-cafe);
+    margin-bottom: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.apresentacao p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.apresentacao h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background-color: var(--caramelo);
+    margin: 20px auto 0;
+}
+
+/* ==============================
+   HISTÓRIA E REFERÊNCIAS
+============================== */
+
+.lista-sonhos {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.lista-sonhos li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.lista-sonhos-intro {
+    text-align: left;
+}
+
+.texto-referencias {
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.texto-historia {
+    text-align: left;
+    line-height: 1.7;
+}
+
+.texto-historia p {
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.texto-identidade {
+    text-align: left !important;
+    line-height: 1.7;
+    width: 100%;
+}
+
+.texto-identidade p {
+    text-align: left !important;
+    margin: 0 0 18px 0;
+}
+
+/* ==============================
+   FOTO
+============================== */
+
+.foto-euzinha {
+    width: 180px !important;
+    height: 220px !important;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ==============================
+   CURIOSIDADES
+============================== */
+
+.curiosidades {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.curiosidades button {
+    background: #806044;
+    color: #f3e8d5;
+    border: 1px solid #5c422e;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.curiosidades button:hover {
+    background: #5c422e;
+}
+
+.alerta-curiosidade {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(35, 25, 17, 0.65);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.alerta-conteudo {
+    background: #e8dcc5;
+    color: #493525;
+    padding: 30px;
+    border: 1px solid #a58a68;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 380px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.alerta-conteudo h3 {
+    color: #68472e;
+    margin-bottom: 15px;
+}
+
+.alerta-conteudo p {
+    line-height: 1.7;
+    text-align: left;
+}
+
+.fechar-alerta {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #493525;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ==============================
+   DISCO DE VINIL
+============================== */
+
+.disco-decorativo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: repeating-radial-gradient(
+        circle,
+        #171615 0px,
+        #242220 2px,
+        #111 4px,
+        #292725 5px
+    );
+    border: 2px solid #38332e;
+    box-shadow: 0 3px 12px #38271955;
+    animation: girarDisco 8s linear infinite;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.disco-centro {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #a36d45;
+    border: 3px solid #d0a47c;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes girarDisco {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==============================
+   RESPONSIVIDADE - CELULAR
+============================== */
+
+@media (max-width: 768px) {
+
+    body {
+        background-size: auto 100vh;
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-attachment: scroll;
+    }
+
+    .cabecalho {
+        padding: 35px 15px 0;
+    }
+
+    .cabecalho h1 {
+        font-size: 34px;
+        letter-spacing: 1px;
+        padding: 0 45px 0 0;
+    }
+
+    .navegacao {
+        gap: 12px 18px;
+        padding: 18px 12px;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+    }
+
+    .conteudo {
+        width: 94%;
+        padding: 20px 0;
+    }
+
+    .conteudo section {
+        padding: 30px 20px;
+        margin-bottom: 22px;
+    }
+
+    .conteudo section h2 {
+        font-size: 25px;
+    }
+
+    .conteudo section p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .apresentacao {
+        padding: 65px 20px !important;
+    }
+
+    .apresentacao h2 {
+        font-size: 32px !important;
+    }
+
+    .apresentacao p {
+        font-size: 16px;
+    }
+
+    .foto-euzinha {
+        width: 160px !important;
+        height: 195px !important;
+    }
+
+    .curiosidades button {
+        margin: 6px;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .alerta-conteudo {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .disco-decorativo {
+        width: 65px;
+        height: 65px;
+        top: 12px;
+        right: 10px;
+    }
+
+    .disco-centro {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ==============================
+   TELAS MUITO PEQUENAS
+============================== */
+
+@media (max-width: 380px) {
+
+    .cabecalho h1 {
+        font-size: 28px;
+    }
+
+    .navegacao {
+        gap: 10px;
+    }
+
+    .navegacao a {
+        font-size: 13px;
+    }
+
+    .conteudo section {
+        padding: 25px 16px;
+    }
+
+    .disco-decorativo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .disco-centro {
+        width: 15px;
+        height: 15px;
+    }
+}

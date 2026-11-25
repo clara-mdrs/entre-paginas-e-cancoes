@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre páginas & canções</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <div class="disco-decorativo">
+    <div class="disco-centro"></div>
+</div>
+   <div class="biblioteca" id="inicio">
+        <header class="cabecalho">
+            <h1>Entre Páginas & Canções</h1>
+            <nav class="navegacao">
+    <a href="#inicio">Início</a>
+    <a href="#quem-sou">Quem sou</a>
+    <a href="#minha-historia">Minha história</a>
+    <a href="#meu-universo">Meu universo</a>
+    <a href="#inspiracoes">Inspirações</a>
+    <a href="#proximos-capitulos">Próximos capítulos</a>
+</nav>
+        </header>
+        <main class="conteudo" id="conteudo-principal">
+            <section class="apresentacao">
+                <h2> O acervo de uma vida</h2>
+                            <p>Entre páginas, canções e descobertas, um pouco de tudo aquilo que me faz ser quem sou.</p>
+
+            </section>
+            <section class="quem-sou" id="quem-sou">
+    <h2>Quem sou</h2>
+<img src="imagens/perfil/euzinha.jpeg" alt="Maria criança" class="foto-euzinha">
+    <div class="texto-identidade">
+
+<p>Tenho 20 anos, sou leonina e tenho um humor um tanto questionável. Ainda estou tentando descobrir quem sou, o que quero e quais caminhos desejo seguir.</p>
+
+<p>Não sou muito boa em me definir. Às vezes tenho algumas certezas, em outras, questiono praticamente tudo. Gosto de pensar, observar, conhecer coisas novas e mudar de opinião quando encontro motivos para isso.</p>
+
+<p>Acho que ainda tenho muito a descobrir sobre mim mesma. Existem sonhos que carrego há anos, interesses que surgiram pelo caminho e vontades que nem sei explicar direito. Estou vivendo, experimentando e tentando entender o que faz sentido para mim.</p>
+
+<p>No momento, talvez minha melhor definição seja essa: alguém em construção, que ainda tem muitas perguntas, algumas certezas e um humor que nem todo mundo é capaz de compreender.</p>
+
+</div>
+
+</section>
+<section class="minha-historia" id="minha-historia">
+    <h2>Minha história</h2>
+
+    <div class="texto-historia">
+
+<p>Em Minha história, quero conhecer um pouco mais sobre mim: a Maria criança, a adolescente e a pessoa que está chegando aos 20 anos. Para começar, quero voltar no tempo e revisitar algumas lembranças, experiências e versões de mim que, de alguma forma, ajudaram a construir quem sou hoje.</p>
+
+<p>Quero reencontrar aquela menina curiosa, falante, briguenta e cheia de vontade de descobrir o mundo. Sempre fui extrovertida. Diziam que eu conversava mais do que o homem da cobra, mas existia uma contradição: eu tinha pavor de apresentações. Entrevistas de emprego também me assustavam. Hoje já não tenho tanto medo de entrevistas, mas basta me pedir para apresentar um trabalho na frente de todo mundo para eu virar um fantasma ou um camarão. Kkkkk.</p>
+
+<p>Na escola, gostava especialmente de Ciências, História e Português. Era mais ambiciosa naquela época e adorava as aulas que aconteciam fora da sala, principalmente as saídas de campo. Em Ciências, saíamos para identificar diferentes plantas, conhecer suas partes e observar as diferentes estruturas dos animais. Lembro também de plantar uma árvore chamada angico e de fazer um boneco cujo cabelo era um pé de cebolinha. São lembranças que mostram como eu gostava de aprender experimentando, observando e colocando a mão na massa.</p>
+
+<p>Com o passar dos anos, algumas dessas experiências ganharam novas dimensões. Entrar na Fiocruz, desenvolver um projeto com minha orientadora, ler vários artigos científicos, fazer benchmarking, participar de saídas de campo e visitas técnicas, conviver com cientistas, pesquisadores, professores e jornalistas e até viajar para apresentar meu projeto foram experiências que contribuíram muito para o meu amadurecimento. Ter um Currículo Lattes aos 17 anos também foi algo marcante para mim.</p>
+
+<p>Mas nem tudo aconteceu como eu imaginava. Nesse meio-tempo, também enfrentei muitas desistências, algumas delas me afetaram psicologicamente e fizeram parte de períodos difíceis da minha trajetória. Nem sempre foi fácil lidar com as expectativas, as mudanças de planos e aquilo que não deu certo. Ainda assim, cada experiência, inclusive as mais difíceis, acabou fazendo parte da pessoa que sou hoje.</p>
+
+<p>Essas vivências me fizeram perceber que aprender não termina na escola ou na universidade. Acho que vou passar a vida inteira aprendendo, seja com os acertos ou com os tropeços.</p>
+
+<p>Hoje, minha fase é muito sobre descobrimento: entender quem sou, o que quero e quais caminhos desejo seguir. Continuo curiosa, briguenta e um pouco orgulhosa, mas reconheço que mudei bastante nos últimos anos. Ainda estou construindo muitas respostas e talvez essa seja justamente uma das partes mais interessantes de estar chegando aos 20 anos.</p>
+
+<p>E escrever este texto acabou me proporcionando uma epifania. Enquanto tentava contar minha própria história, fui me lembrando de coisas que nem eu mesma recordava. Percebi quantas experiências, pessoas, lugares e pequenos momentos fazem parte de quem sou. No fim, escrever sobre mim também foi uma maneira de me conhecer um pouco melhor.</p>
+
+</div>
+
+<div class="curiosidades">
+    <h3>Pequenas curiosidades sobre mim</h3>
+
+    <button onclick="mostrarCuriosidade('cientista')">
+        Pequena cientista
+    </button>
+
+    <button onclick="mostrarCuriosidade('fiocruz')">
+        Um RPG sobre a Fiocruz
+    </button>
+
+    <button onclick="mostrarCuriosidade('kizomba')">
+        Movimento estudantil
+    </button>
+</div>
+
+<div id="alerta-curiosidade" class="alerta-curiosidade">
+    <div class="alerta-conteudo">
+        <button class="fechar-alerta" onclick="fecharCuriosidade()">×</button>
+
+        <h3 id="titulo-curiosidade"></h3>
+        <p id="texto-curiosidade"></p>
+    </div>
+</div>
+
+</section>
+<section class="meu-universo" id="meu-universo">
+    <h2>Meu universo</h2>
+
+    <p>
+        Um pouco das coisas que despertam minha curiosidade,
+        movimentam meus dias e fazem parte de quem sou.
+    </p>
+
+    <div class="grade-hobbies">
+
+        <article class="card-hobby">
+
+    <h3>Música</h3>
+
+    <img
+        src="imagens/musica/se-minha-vida-fosse-um-disco.jpg"
+        alt="Imagem da playlist Se a minha vida fosse um disco"
+        class="imagem-hobby"
+    >
+
+    <p>
+        Desde sempre tive muito acesso à música, e meu gosto musical foi bastante influenciado pela convivência com minha irmã mais velha.
+
+Cresci escutando sertanejo, porém nunca foi meu gênero preferido. Durante a adolescência, minha irmã escutava muito pop, rap e rock. Nunca gostei muito de pop, mas o gosto pelo rap e pelo rock acabou ficando.
+
+Hoje ela não consome esses gêneros com tanta frequência como antes, mas eu acabei me apaixonando por eles.
+
+No rock, amo Mamonas Assassinas, Charlie Brown Jr. e Raul Seixas. No rap, meus primeiros contatos foram com Tribo da Periferia e Hungria. Hoje escuto muito 2Pac, Sabotage, BK, Baco Exu do Blues e Djonga.
+
+A música sempre esteve muito presente na minha vida. É também uma maneira de entender o que sinto. Muitas vezes, encontro nas letras motivações, reflexões e até sentimentos que não sabia muito bem como explicar.
+    </p>
+    <blockquote>
+    “O rap é compromisso, não é viagem.”
+</blockquote>
+<button onclick="mostrarConteudo('curiosidade-musica')">
+    Curiosidade
+</button>
+
+<div id="curiosidade-musica" class="conteudo-extra" style="display: none;">
+    <h4>Você sabia?</h4>
+    <p>
+        A música é capaz de estimular diversas áreas do cérebro, contribuindo para a aprendizagem, o desenvolvimento da linguagem, a interação social e a expressão das emoções. Além disso, as letras das canções podem despertar memórias, ensinar novas palavras e até ajudar no aprendizado de outros idiomas.
+    </p>
+</div>
+<article class="card-hobby">
+
+    <h3>Academia</h3>
+
+    <img
+        src="imagens/decoracoes/academia.jpg"
+        alt="Academia"
+        class="imagem-hobby">
+
+    <p>
+        A academia, especialmente a musculação, me ajuda bastante a cuidar de questões físicas e mentais. É uma atividade que faz parte da minha rotina e que considero importante para o meu bem-estar.
+
+Além dos resultados físicos, gosto de perceber minha evolução e de entender que a constância faz diferença. É uma das maneiras que encontrei de cuidar de mim.
+    </p>
+
+    <blockquote>
+        “Cuida da sua mente, cuida do seu corpo, fortalece a alma.”
+    </blockquote>
+    <button onclick="mostrarConteudo('curiosidade-academia')">
+    Curiosidade
+</button>
+
+<div id="curiosidade-academia" class="conteudo-extra" style="display: none;">
+    <h4>Você sabia?</h4>
+    <p>
+      A musculação fortalece os ossos, auxilia no controle de doenças como diabetes e hipertensão e contribui para o ganho de massa muscular. Além disso, o descanso e o sono de qualidade são fundamentais para a recuperação dos músculos.
+    </p>
+</div>
+
+    <article class="card-hobby">
+
+    <h3>Futebol</h3>
+
+    <img
+        src="imagens/decoracoes/cabuloso.jpeg"
+        alt="Futebol"
+        class="imagem-hobby"
+    >
+
+    <p>
+        Minha história com o futebol começou em uma quadra de esportes em frente à minha casa. Meus primos, os amigos da rua e eu nos reuníamos para brincar, e foi assim que conheci o futebol.
+
+Minha paixão pelo Cabuloso começou ainda na infância. Como fruto de uma união entre mineiros, cresci em uma família que me incentivou a fazer parte de um dos maiores clubes do futebol brasileiro. Acho que essa paixão também tem muito a ver com as pessoas com quem cresci e com as lembranças que construí ao longo dos anos.
+    </p>
+
+    <blockquote>
+        “Bola na rede pra fazer o gol.
+        Quem não sonhou em ser um jogador de futebol?”
+    </blockquote>
+<button onclick="mostrarConteudo('curiosidade-futebol')">
+    Curiosidade
+</button>
+
+<div id="curiosidade-futebol" class="conteudo-extra" style="display: none;">
+    <h4>Você sabia?</h4>
+    <p>
+        O Cruzeiro nasceu durante uma visita do cônsul da Itália a Belo Horizonte, em plena virada da década de 1920. Membros da colônia italiana na cidade se reuniram com o oficial em pleno Natal para solicitar a organização da agremiação. Decidiu-se marcar um novo encontro para semana seguinte, após as festas de final de ano. Nessa segunda conversa, realizada em 2 de janeiro de 1921, se formou a Società Sportiva Palestra Itália.
+    </p>
+</div>
+
+<article class="card-hobby">
+
+    <h3>Livros</h3>
+
+    <img
+        src="imagens/livros/livro.jpeg"
+        alt="Livros"
+        class="imagem-hobby"
+    >
+
+    <p>
+        Os livros foram fundamentais para eu me tornar quem sou.
+
+Minha mãe sempre gostou de ler e, desde pequena, tinha o costume de ler livros para mim antes de dormir. Acredito que esse contato com a leitura desde tão cedo tenha despertado meu interesse por esse universo.
+
+Durante os primeiros anos escolares, também tive muito incentivo à leitura. Comecei a me interessar pelos livros através dos gibis da Turma da Mônica e das obras de Ruth Rocha.
+
+Sempre achei fascinante como a leitura me fazia criar um mundo totalmente diferente a cada história, especialmente nos contos de fadas e na ficção. Gostava dessa possibilidade de conhecer lugares, personagens e histórias que só existiam na minha imaginação.
+
+Essas experiências também foram importantes para desenvolver minha criatividade e influenciar minha relação com a escrita.
+    </p>
+
+    <blockquote>
+        “Quem não tem amigo, mas tem um livro, tem uma estrada.”
+    
+    </blockquote>
+<button onclick="mostrarConteudo('curiosidade-livros')">
+    Curiosidade
+</button>
+
+<div id="curiosidade-livros" class="conteudo-extra" style="display: none;">
+    <h4>Você sabia?</h4>
+    <p>
+       De acordo com um estudo de Gabriel Zaid publicado em 2010, se colocássemos um exemplar de todos os livros lançados em um ano numa única prateleira, ela teria 20km de comprimento (considerando que cada um desses livros tenha dois centímetros de espessura).
+    </p>
+</div>
+
+
+<article class="card-hobby">
+
+    <h3>Animais</h3>
+
+    <img
+        src="imagens/livros/cachorro.jpeg"
+        alt="Animais"
+        class="imagem-hobby"
+    >
+
+    <p>
+       Sempre tive um fascínio pelo mundo animal. Sempre achei incrível a diversidade entre as espécies e como cada uma possui características e comportamentos tão diferentes.
+
+Quando pequena, já tive um jabuti e um preá, cuidei de um cágado, acolhi inúmeros gatinhos que encontrei na rua e tive contato com passarinhos, colônias de formigas, cigarras e até joaninhas. Sempre gostei de observar e tentar entender o comportamento dos animais.
+
+Meu sonho sempre foi ser veterinária, e espero que um dia eu consiga realizá-lo. Esse desejo também foi incentivado pela minha mãe, que, assim como eu, ama os animais e também sonhou em ser veterinária.
+
+Hoje tenho três cachorros e continuo tendo o mesmo carinho e interesse pelos animais que tinha quando criança.
+    </p>
+
+    <blockquote>
+        “O amor por todas as criaturas viventes é o mais nobre atributo do homem.”
+    </blockquote>
+<button onclick="mostrarConteudo('curiosidade-animais')">
+    Curiosidade
+</button>
+
+<div id="curiosidade-animais" class="conteudo-extra" style="display: none;">
+    <h4>Você sabia?</h4>
+    <p>
+       Já ouviu alguém dizer que cachorros só enxergam em preto e branco?
+"Eles veem praticamente todas as cores. A questão é que eles não têm nos olhos uma estrutura que diferencia a cor vermelha e o cérebro canino entende como algo acinzentado", disse o veterinário.
+Na realidade, os doguinhos relacionam psicologicamente os formatos mais que as cores. Portanto, vale testar diferentes tipos de brinquedos e acessórios para seu cachorro se entreter.
+    </p>
+</div>
+
+
+<article class="card-hobby">
+
+    <h3>Escrita</h3>
+
+    <img
+        src="imagens/livros/escrita.jpeg"
+        alt="Caderno e materiais de escrita"
+        class="imagem-hobby"
+    >
+
+    <p>
+        Minha relação com a escrita começou assim que fui aprendendo a ler e conhecendo o mundo das palavras. Durante os primeiros anos escolares, do 1º ao 5º ano, estudei em uma escola que incentivava bastante a escrita e nos estimulava a desenvolver essas habilidades.
+
+Criávamos contos de fadas, fábulas, poesias e escrevíamos diários. Anos depois, fui aprimorando essas habilidades e comecei a utilizar a escrita como uma maneira de desabafo.
+
+Hoje, minhas inspirações surgem muitas vezes do meu próprio humor. Momentos de epifania, tristeza ou raiva acabam se transformando em palavras. Gosto de escrever sobre aquilo que estou sentindo, principalmente quando preciso organizar meus pensamentos ou simplesmente colocar algo para fora.
+    </p>
+
+    <blockquote>
+        “Se existe um livro que você quer ler, mas ele ainda
+        não foi escrito, então você deve escrevê-lo.”
+    </blockquote>
+    <button onclick="mostrarConteudo('curiosidade-escrita')">
+    Curiosidade
+</button>
+
+<div id="curiosidade-escrita" class="conteudo-extra" style="display: none;">
+    <h4>Você sabia?</h4>
+    <p>
+        A escrita surgiu há mais de cinco mil anos na
+        antiga Mesopotâmia. Inicialmente, era utilizada
+        principalmente para registrar informações
+        comerciais e administrativas.
+    </p>
+</div>
+
+</article>
+</article>
+</article>
+</article>
+
+</article>
+    </div>
+</section>
+    </p>
+</section>
+<section class="inspiracoes" id="inspiracoes">
+    <h2>Inspirações</h2>
+
+    <p class="texto-referencias">
+    Além da força da minha mãe e das mulheres que me cercam, tenho como inspiração Carolina Maria de Jesus e Conceição Evaristo, escritoras que admiro pela forma como retratam vivências e desigualdades sociais.
+</p>
+
+<p class="texto-referencias">
+    Na música, Rita Lee e Raul Seixas me inspiram pela irreverência, pela liberdade e pelo espírito questionador. O curta-metragem Ilha das Flores também marcou minha formação crítica.
+</p>
+
+<p class="texto-referencias">
+    Na literatura, A Metamorfose, de Franz Kafka, despertou meu interesse por questões como exclusão e relações humanas.
+</p>
+
+<p class="texto-referencias">
+    São referências que ampliam minha maneira de pensar e enxergar o mundo. Uma frase que carrego comigo é: “Teu juízo é teu guia.”
+</p>
+</section>
+<section class="proximos-capitulos" id="proximos-capitulos">
+    <h2>Próximos capítulos</h2>
+
+    <p>
+    Como ainda tenho 20 anos, continuo tendo sonhos
+    de uns anos atrás. Entre vários deles, alguns são:
+</p>
+
+<ul class="lista-sonhos">
+    <li>Me formar em História (apenas por gostar);</li>
+    <li>Quero ir ao Mineirão, estádio do maior time do mundo (te juro que não é uma hipérbole);</li>
+    <li>Quero fazer uma expedição na Amazônia;</li>
+    <li>Criar um projeto voltado à acessibilidade e segurança digital para pessoas idosas e com deficiência;</li>
+    <li>Ter um Lancer ou um Impala 67;</li>
+    <li>Fazer treino de inferiores sem reclamar;</li>
+    <li>Conhecer o México;</li>
+    <li>Conhecer todas as capitais do Brasil;</li>
+    <li>Colecionar discos;</li>
+    <li>Tirar uma foto com meu jogador preferido, o goleiro Fábio;</li>
+    <li>Escrever no mínimo 5 livros;</li>
+    <li>Escrever uma música;</li>
+    <li>Aprender crochê;</li>
+    <li>Terminar minha lista interminável de livros;</li>
+    <li>Andar no conversível da Barbie.</li>
+</ul>
+<p>
+    Lembra que, desde pequena, eu sonhava em me tornar veterinária? Ainda sonho em ajudar os animais. Felizmente ou infelizmente, esse caminho acabou tomando outra direção. Mas, se esse sonho ainda não for uma utopia, farei o possível para que a tecnologia que pretendo aprimorar também se transforme em algo que reflita positivamente na natureza.
+</p>
+
+<p>
+ Afinal, como diz Milton Nascimento:
+
+"Mas é preciso ter força, é preciso ter raça, é preciso ter gana sempre. Quem traz no corpo a marca, Maria, Maria, mistura a dor e a alegria."
+
+— Milton Nascimento
+A natureza coloriu boa parte do mundo, mas eu pretendo colorir o que restou em preto e branco.
+
+~ De mim para mim
+</p>
+</section>
+            
+
+        </main>
+    </div>
+
+    <script src="js/interacoes.js"></script>
+    
+
+</body>
+</html>
